@@ -1,7 +1,7 @@
 # synthonmap
 
-[![Demo](https://img.shields.io/badge/Demo-SynthonMap-0A7B83)](https://synthonmap.mireklzicar.com/)
-[![Paper: Factorized Search and Cartography of Synthon-Based Chemical Spaces](https://img.shields.io/badge/Paper-OpenReview-B31B1B)](https://openreview.net/forum?id=qUoHw1xkIM)
+[![Demo](docs/badges/demo.svg)](https://synthonmap.mireklzicar.com/)
+[![Paper](docs/badges/paper.svg)](https://openreview.net/forum?id=qUoHw1xkIM)
 
 **Stream coordinates into a high-resolution count histogram, then color the counts.**
 This repository extracts the computational core of the SynthonMap product-density
