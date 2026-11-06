@@ -1,0 +1,116 @@
+{
+  "source": {
+    "resource": "synthonor.data/synthon_space_1M.tsv",
+    "rows": 6273,
+    "reactions": 42,
+    "tsv_sha256": "d234a99d2695ed5e5269fe162bba12b99be1cd9c8d5ec0c43e57fa4180aee841",
+    "schemas_sha256": "a7d877109689fb678a346a5b4166199b772d15621e41c99cae0c80c86b2249cb"
+  },
+  "recipe_combinations": 990829,
+  "seed": 47,
+  "train": 3000,
+  "validation": 400,
+  "test": 400,
+  "assembly": {
+    "attempted": 3801,
+    "invalid": 0,
+    "duplicate_structures": 1
+  },
+  "assembly_policy": "Single sanitized, connected product without attachment atoms; lexical canonical first match; structure deduplication before splitting.",
+  "fingerprint": "Morgan radius 2, 2048 bits, no chirality; full assembled products for teacher/audit, attachment atoms retained in synthon inputs.",
+  "umap": {
+    "neighbors": 20,
+    "min_dist": 0.2,
+    "repulsion": 3,
+    "negative_samples": 40,
+    "epochs": 500,
+    "implementation": "umap-learn CPU"
+  },
+  "student": {
+    "selection": "Lowest validation coordinate MSE, no test-based selection",
+    "best_step": 300,
+    "validation_mse": 0.17066892981529236,
+    "history": [
+      {
+        "step": 0,
+        "validation_mse": 0.9567975997924805
+      },
+      {
+        "step": 100,
+        "validation_mse": 0.17925278842449188
+      },
+      {
+        "step": 200,
+        "validation_mse": 0.1737831085920334
+      },
+      {
+        "step": 300,
+        "validation_mse": 0.17066892981529236
+      },
+      {
+        "step": 400,
+        "validation_mse": 0.17698253691196442
+      },
+      {
+        "step": 500,
+        "validation_mse": 0.17305225133895874
+      },
+      {
+        "step": 600,
+        "validation_mse": 0.17765659093856812
+      },
+      {
+        "step": 700,
+        "validation_mse": 0.18609465658664703
+      },
+      {
+        "step": 800,
+        "validation_mse": 0.1994723528623581
+      },
+      {
+        "step": 900,
+        "validation_mse": 0.20115134119987488
+      },
+      {
+        "step": 1000,
+        "validation_mse": 0.2038663774728775
+      },
+      {
+        "step": 1100,
+        "validation_mse": 0.2041904330253601
+      },
+      {
+        "step": 1200,
+        "validation_mse": 0.2147693783044815
+      },
+      {
+        "step": 1300,
+        "validation_mse": 0.20895537734031677
+      },
+      {
+        "step": 1400,
+        "validation_mse": 0.20624804496765137
+      },
+      {
+        "step": 1500,
+        "validation_mse": 0.2076498121023178
+      }
+    ]
+  },
+  "quality": {
+    "recall10": 0.08725,
+    "true10_in_100": 0.38625,
+    "queries": 400,
+    "references": 3000,
+    "scope": "Canonical-product-disjoint test queries vs training reference products; not recall over the rendered draws.",
+    "ties": "Stable reference-order top ten; equal-similarity ties can lower strict identity recall."
+  },
+  "fit_seconds": 42.86631263513118,
+  "versions": {
+    "synthonor": "0.2.0",
+    "rdkit": "2026.3.5",
+    "umap-learn": "0.5.9.post2",
+    "torch": "2.9.0+cu128",
+    "numpy": "1.26.4"
+  }
+}

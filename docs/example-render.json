@@ -1,0 +1,40 @@
+{
+  "shape": [
+    2048,
+    2048
+  ],
+  "bounds": [
+    [
+      -27.25542110443115,
+      -36.63328212738037
+    ],
+    [
+      55.109035911560056,
+      45.73117488861084
+    ]
+  ],
+  "seen": 1000000,
+  "accepted": 1000000,
+  "outside": 0,
+  "nonfinite": 0,
+  "count_dtype": "int64",
+  "device": "cuda",
+  "orientation": "row 0 = maximum Y; columns increase with X",
+  "source": {
+    "resource": "synthonor.data/synthon_space_1M.tsv",
+    "rows": 6273,
+    "reactions": 42,
+    "tsv_sha256": "d234a99d2695ed5e5269fe162bba12b99be1cd9c8d5ec0c43e57fa4180aee841",
+    "schemas_sha256": "a7d877109689fb678a346a5b4166199b772d15621e41c99cae0c80c86b2249cb"
+  },
+  "recipe_combinations": 990829,
+  "seed": 48,
+  "batch_size": 8192,
+  "display_ceiling": 10.0,
+  "palette": "viridis",
+  "color": "log1p(count / original_bin_area) / log1p(display_ceiling)",
+  "bounds_pass_seconds": 0.17378063313663006,
+  "count_pass_seconds": 0.18026658473536372,
+  "model_sha256": "e8b2ad777e6d19d38997eccbb54980789fd0048a1a6dcbba973f632018f85690",
+  "interpretation": "Uniform raw recipes with replacement mapped by the cached-synthon student. No assembly, validity filtering or molecular deduplication in the raster pass. Density is in learned coordinate space, not a count of unique molecules."
+}

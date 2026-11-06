@@ -1,0 +1,25 @@
+[build-system]
+requires = ["setuptools>=68"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "synthonmap"
+version = "0.1.0"
+description = "Streaming count histograms of learned chemical-space coordinates"
+readme = "README.md"
+requires-python = ">=3.10"
+dependencies = ["numpy>=1.24", "matplotlib>=3.7", "Pillow>=10"]
+
+[project.optional-dependencies]
+example = ["synthonor>=0.2.0", "rdkit>=2024.9", "umap-learn>=0.5.7,<0.6", "torch>=2.2", "scikit-learn>=1.3"]
+gpu = ["torch>=2.2"]
+test = ["pytest>=7"]
+
+[project.urls]
+Repository = "https://github.com/mireklzicar/synthonmap"
+
+[tool.setuptools.packages.find]
+where = ["src"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
