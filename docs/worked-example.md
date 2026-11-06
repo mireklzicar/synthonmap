@@ -1,6 +1,8 @@
 # Recorded Freedom example
 
-This is the complete run behind the README image, made on 6 November 2026:
+This is the complete run behind the example image below, made on 6 November 2026:
+
+![One million predicted coordinates from the Freedom example](freedom-density.png)
 
 ```bash
 pip install -e '.[example]'

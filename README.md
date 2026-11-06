@@ -1,11 +1,16 @@
 # synthonmap
 
+[![Demo](https://img.shields.io/badge/Demo-SynthonMap-0A7B83)](https://synthonmap.mireklzicar.com/)
+[![Paper: Factorized Search and Cartography of Synthon-Based Chemical Spaces](https://img.shields.io/badge/Paper-OpenReview-B31B1B)](https://openreview.net/forum?id=qUoHw1xkIM)
+
 **Stream coordinates into a high-resolution count histogram, then color the counts.**
 This repository extracts the computational core of the SynthonMap product-density
 experiment. It has no web server, UI, Deep Zoom, tile pyramid, or private database
 requirement.
 
-![One million predicted coordinates from the Freedom example](docs/freedom-density.png)
+[![SynthonMap demo showing a product-density map and a selected product with its synthons](docs/synthonmap-demo.png)](https://synthonmap.mireklzicar.com/)
+
+*The [interactive demo](https://synthonmap.mireklzicar.com/) uses this rendering approach with a full visualization UI.*
 
 The core accepts any batches of `(x, y)` coordinates. An optional worked example
 uses the Freedom slice bundled with [synthonor](https://github.com/mireklzicar/synthonor):
@@ -140,3 +145,17 @@ log-density transfer, and cached reaction-aware model into independent modules.
 `synthonor` is optional and supplies the example resources. Its search engine is
 not required for rendering, nor are its approximate OR fingerprints substituted
 for the example's assembled-product teacher fingerprints.
+
+## Citation
+
+[**Factorized Search and Cartography of Synthon-Based Chemical Spaces**](https://openreview.net/forum?id=qUoHw1xkIM) — Miroslav Lžičař, ICML 2026 GenBio Workshop.
+
+```bibtex
+@inproceedings{lzicar2026factorized,
+  title     = {Factorized Search and Cartography of Synthon-Based Chemical Spaces},
+  author    = {L{\v{z}}i{\v{c}}a{\v{r}}, Miroslav},
+  booktitle = {ICML 2026 Workshop on Generative and Agentic AI for Biology (GenBio)},
+  year      = {2026},
+  url       = {https://openreview.net/forum?id=qUoHw1xkIM}
+}
+```
