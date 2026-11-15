@@ -1,0 +1,18 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using this metadata."
+type: software
+title: synthonmap
+authors:
+  - family-names: "Lžičař"
+    given-names: "Miroslav"
+repository-code: "https://github.com/mireklzicar/synthonmap"
+url: "https://synthonmap.mireklzicar.com/"
+references:
+  - type: conference-paper
+    title: "Factorized Search and Cartography of Synthon-Based Chemical Spaces"
+    authors:
+      - family-names: "Lžičař"
+        given-names: "Miroslav"
+    collection-title: "ICML 2026 Workshop on Generative and Agentic AI for Biology (GenBio)"
+    year: 2026
+    url: "https://openreview.net/forum?id=qUoHw1xkIM"
