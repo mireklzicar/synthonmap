@@ -1,6 +1,6 @@
 # synthonmap
 
-[![Demo](docs/badges/demo.svg)](https://synthonmap.mireklzicar.com/)
+[![Demo](docs/badges/demo.svg)](https://synthonmap.deepmedchem.com/)
 [![Paper](docs/badges/paper.svg)](https://openreview.net/forum?id=qUoHw1xkIM)
 
 **Stream coordinates into a high-resolution count histogram, then color the counts.**
@@ -8,9 +8,9 @@ This repository extracts the computational core of the SynthonMap product-densit
 experiment. It has no web server, UI, Deep Zoom, tile pyramid, or private database
 requirement.
 
-[![SynthonMap demo showing a product-density map and a selected product with its synthons](docs/synthonmap-demo.png)](https://synthonmap.mireklzicar.com/)
+[![SynthonMap demo showing a product-density map and a selected product with its synthons](docs/synthonmap-demo.png)](https://synthonmap.deepmedchem.com/)
 
-*The [interactive demo](https://synthonmap.mireklzicar.com/) uses this rendering approach with a full visualization UI.*
+*The [interactive demo](https://synthonmap.deepmedchem.com/), hosted by Deep MedChem, uses this rendering approach with a full visualization UI.*
 
 The core accepts any batches of `(x, y)` coordinates. An optional worked example
 uses the Freedom slice bundled with [synthonor](https://github.com/mireklzicar/synthonor):

@@ -6,7 +6,7 @@ authors:
   - family-names: "Lžičař"
     given-names: "Miroslav"
 repository-code: "https://github.com/mireklzicar/synthonmap"
-url: "https://synthonmap.mireklzicar.com/"
+url: "https://synthonmap.deepmedchem.com/"
 references:
   - type: conference-paper
     title: "Factorized Search and Cartography of Synthon-Based Chemical Spaces"
