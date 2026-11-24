@@ -16,7 +16,7 @@ gpu = ["torch>=2.2"]
 test = ["pytest>=7"]
 
 [project.urls]
-Demo = "https://synthonmap.mireklzicar.com/"
+Demo = "https://synthonmap.deepmedchem.com/"
 Paper = "https://openreview.net/forum?id=qUoHw1xkIM"
 Repository = "https://github.com/mireklzicar/synthonmap"
 
